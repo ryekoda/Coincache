@@ -19,8 +19,8 @@ THISAPP is a social investment app that enables you to invest in crypto with you
 * Invest with safeguards: The smart contracts backend takes you out of an investment before it becomes too risky.
 * Create a new investment group: Our proprietary algorithm matches you to people with a complementary investment strategy. 
 * Choose your risk tolerance: 
-** 🐠 Want to dabble in cryptocurrency without a huge loss? Use the Safe strategy. 
-** 🐋 Like to live dangerously? Try for a high risk, high reward Gain strategy.
+ * 🐠 Want to dabble in cryptocurrency without a huge loss? Use the Safe strategy. 
+ * 🐋 Like to live dangerously? Try for a high risk, high reward Gain strategy.
 
 
 ## Next Steps
