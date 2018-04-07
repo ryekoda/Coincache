@@ -63,12 +63,28 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="1I6-VJ-9J8" id="dYh-qe-R9c"/>
-                        <segue destination="jo0-Ih-DUS" kind="show" identifier="Home2Detail" id="6Ls-Vp-HDU"/>
+                        <segue destination="7A6-jJ-pQ3" kind="show" identifier="Home2Detail" id="6Ls-Vp-HDU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="260" y="131.78410794602701"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="vL5-VE-hBr">
+            <objects>
+                <viewController id="7A6-jJ-pQ3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ME7-1X-3NW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Cfe-8T-Rdj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail" id="8wJ-R2-3Ht"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ik-3b-F0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="883"/>
         </scene>
         <!--Post-->
         <scene sceneID="oT6-Sa-xac">
@@ -186,14 +202,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PXv-eC-M74" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1029.5999999999999" y="131.78410794602701"/>
-        </scene>
-        <!--HomeDetail-->
-        <scene sceneID="jzo-Sh-d3G">
-            <objects>
-                <viewControllerPlaceholder storyboardName="HomeDetail" id="jo0-Ih-DUS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JLj-0C-4ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="260" y="560"/>
         </scene>
     </scenes>
 </document>

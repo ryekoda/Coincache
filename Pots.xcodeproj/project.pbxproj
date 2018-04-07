@@ -21,6 +21,11 @@
 		946F44142078DC9E00B9D921 /* PotDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F44132078DC9E00B9D921 /* PotDetailVC.swift */; };
 		946F44182079626900B9D921 /* ContributorsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946F44172079626900B9D921 /* ContributorsView.xib */; };
 		946F441A2079636A00B9D921 /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F44192079636A00B9D921 /* ContributorsView.swift */; };
+		946F441D2079745600B9D921 /* HomeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946F441B2079745600B9D921 /* HomeDetail.storyboard */; };
+		946F4420207974A400B9D921 /* DetailOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F441E207974A400B9D921 /* DetailOverviewCell.swift */; };
+		946F4421207974A400B9D921 /* DetailOverviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946F441F207974A400B9D921 /* DetailOverviewCell.xib */; };
+		946F44252079750600B9D921 /* DetailGeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F44232079750600B9D921 /* DetailGeneralCell.swift */; };
+		946F44262079750600B9D921 /* DetailGeneralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946F44242079750600B9D921 /* DetailGeneralCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		946F44132078DC9E00B9D921 /* PotDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotDetailVC.swift; sourceTree = "<group>"; };
 		946F44172079626900B9D921 /* ContributorsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContributorsView.xib; sourceTree = "<group>"; };
 		946F44192079636A00B9D921 /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
+		946F441C2079745600B9D921 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Pots/Base.lproj/HomeDetail.storyboard; sourceTree = "<group>"; };
+		946F441E207974A400B9D921 /* DetailOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOverviewCell.swift; sourceTree = "<group>"; };
+		946F441F207974A400B9D921 /* DetailOverviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailOverviewCell.xib; sourceTree = "<group>"; };
+		946F44232079750600B9D921 /* DetailGeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGeneralCell.swift; sourceTree = "<group>"; };
+		946F44242079750600B9D921 /* DetailGeneralCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGeneralCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +214,9 @@
 		946F44152078DCA500B9D921 /* PotDetail */ = {
 			isa = PBXGroup;
 			children = (
+				946F441B2079745600B9D921 /* HomeDetail.storyboard */,
 				946F44132078DC9E00B9D921 /* PotDetailVC.swift */,
+				946F4422207974A800B9D921 /* Cell */,
 			);
 			path = PotDetail;
 			sourceTree = "<group>";
@@ -216,6 +228,33 @@
 				94139DE22078C198001A6491 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		946F4422207974A800B9D921 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				946F44282079751400B9D921 /* Overview */,
+				946F44272079750900B9D921 /* General */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		946F44272079750900B9D921 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				946F44232079750600B9D921 /* DetailGeneralCell.swift */,
+				946F44242079750600B9D921 /* DetailGeneralCell.xib */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		946F44282079751400B9D921 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				946F441E207974A400B9D921 /* DetailOverviewCell.swift */,
+				946F441F207974A400B9D921 /* DetailOverviewCell.xib */,
+			);
+			path = Overview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +368,10 @@
 				94139DE42078C198001A6491 /* LaunchScreen.storyboard in Resources */,
 				94139DE12078C198001A6491 /* Assets.xcassets in Resources */,
 				94139DDF2078C198001A6491 /* Main.storyboard in Resources */,
+				946F4421207974A400B9D921 /* DetailOverviewCell.xib in Resources */,
+				946F441D2079745600B9D921 /* HomeDetail.storyboard in Resources */,
 				94139E0A2078C46A001A6491 /* HomeGeneralCell.xib in Resources */,
+				946F44262079750600B9D921 /* DetailGeneralCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +401,10 @@
 				94139DDC2078C198001A6491 /* HomeVC.swift in Sources */,
 				946F440D2078D9A900B9D921 /* PostVC.swift in Sources */,
 				94139DDA2078C198001A6491 /* AppDelegate.swift in Sources */,
+				946F4420207974A400B9D921 /* DetailOverviewCell.swift in Sources */,
 				946F44142078DC9E00B9D921 /* PotDetailVC.swift in Sources */,
 				946F441A2079636A00B9D921 /* ContributorsView.swift in Sources */,
+				946F44252079750600B9D921 /* DetailGeneralCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +454,14 @@
 				94139DE32078C198001A6491 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		946F441B2079745600B9D921 /* HomeDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				946F441C2079745600B9D921 /* Base */,
+			);
+			name = HomeDetail.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

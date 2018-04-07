@@ -11,6 +11,7 @@ import UIKit
 class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
+    var refreshControl: UIRefreshControl!
     @IBOutlet weak var tableView: UITableView!
     
 //    var userPotList: [String] = []
@@ -40,6 +41,10 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private func tableViewConfiguration() {
         let nib = UINib(nibName: "HomeGeneralCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "HomeGeneralCell")
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.addTarget(self, action: #selector(self.tableRefreshed), for: .valueChanged)
+        self.tableView.addSubview(self.refreshControl)
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,12 +52,18 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
+    @objc func tableRefreshed() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.refreshControl.endRefreshing()
+        }
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "Home2Detail", sender: self)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140.0
+        return 160.0
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
