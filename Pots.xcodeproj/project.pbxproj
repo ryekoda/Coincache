@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2714067D207988FF00B45808 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714067C207988FF00B45808 /* Keyboard.swift */; };
+		2714067F20798A5900B45808 /* NumPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2714067B207988FE00B45808 /* NumPad.xib */; };
 		94139DDA2078C198001A6491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DD92078C198001A6491 /* AppDelegate.swift */; };
 		94139DDC2078C198001A6491 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DDB2078C198001A6491 /* HomeVC.swift */; };
 		94139DDF2078C198001A6491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94139DDD2078C198001A6491 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2714067B207988FE00B45808 /* NumPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumPad.xib; sourceTree = "<group>"; };
+		2714067C207988FF00B45808 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		94139DD62078C198001A6491 /* Pots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94139DD92078C198001A6491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94139DDB2078C198001A6491 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				946F44102078DA9A00B9D921 /* AddPriceVC.swift */,
+				2714067C207988FF00B45808 /* Keyboard.swift */,
+				2714067B207988FE00B45808 /* NumPad.xib */,
 			);
 			path = Price;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2714067F20798A5900B45808 /* NumPad.xib in Resources */,
 				946F44182079626900B9D921 /* ContributorsView.xib in Resources */,
 				94139DE42078C198001A6491 /* LaunchScreen.storyboard in Resources */,
 				94139DE12078C198001A6491 /* Assets.xcassets in Resources */,
@@ -398,6 +405,7 @@
 			files = (
 				94139E092078C46A001A6491 /* HomeGeneralCell.swift in Sources */,
 				946F44112078DA9A00B9D921 /* AddPriceVC.swift in Sources */,
+				2714067D207988FF00B45808 /* Keyboard.swift in Sources */,
 				94139DDC2078C198001A6491 /* HomeVC.swift in Sources */,
 				946F440D2078D9A900B9D921 /* PostVC.swift in Sources */,
 				94139DDA2078C198001A6491 /* AppDelegate.swift in Sources */,
