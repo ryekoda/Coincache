@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContributorsView" customModule="Pots" customModuleProvider="target">
+            <connections>
+                <outlet property="contributorImageView1" destination="x94-nN-CKa" id="GRY-Ss-m0M"/>
+                <outlet property="contributorImageView10" destination="UZQ-Ol-MGr" id="Xkh-Nq-KgX"/>
+                <outlet property="contributorImageView2" destination="leO-kS-Bt9" id="YKY-fA-fde"/>
+                <outlet property="contributorImageView3" destination="04D-xG-XGc" id="JJT-8h-KJG"/>
+                <outlet property="contributorImageView4" destination="VzG-Ot-Imh" id="ldc-HQ-WuE"/>
+                <outlet property="contributorImageView5" destination="SSL-I0-Gij" id="jCB-Hi-Dnx"/>
+                <outlet property="contributorImageView6" destination="USV-Ng-SR1" id="4sz-mX-wVs"/>
+                <outlet property="contributorImageView7" destination="jBn-F5-LWG" id="Qyx-ws-mff"/>
+                <outlet property="contributorImageView8" destination="kFi-cj-pXa" id="6gg-mQ-d2y"/>
+                <outlet property="contributorImageView9" destination="rGi-7e-RYp" id="I8t-ZK-gvy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="UZQ-Ol-MGr">
+                    <rect key="frame" x="287" y="27" width="50" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="kFi-cj-pXa">
+                    <rect key="frame" x="262" y="27" width="50" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="USV-Ng-SR1">
+                    <rect key="frame" x="237" y="27" width="50" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="VzG-Ot-Imh">
+                    <rect key="frame" x="212" y="27" width="50" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="leO-kS-Bt9">
+                    <rect key="frame" x="187" y="27" width="50" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="x94-nN-CKa">
+                    <rect key="frame" x="162" y="27" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="x94-nN-CKa" secondAttribute="height" multiplier="1:1" id="KtG-Q2-7r6"/>
+                        <constraint firstAttribute="width" constant="50" id="SnA-G6-6w5"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="04D-xG-XGc">
+                    <rect key="frame" x="137" y="27" width="50" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="SSL-I0-Gij">
+                    <rect key="frame" x="112" y="27" width="50" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="jBn-F5-LWG">
+                    <rect key="frame" x="87" y="27" width="50" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="rGi-7e-RYp">
+                    <rect key="frame" x="62" y="27" width="50" height="50"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kFi-cj-pXa" firstAttribute="height" secondItem="USV-Ng-SR1" secondAttribute="height" id="0rH-NL-yHB"/>
+                <constraint firstItem="UZQ-Ol-MGr" firstAttribute="leading" secondItem="kFi-cj-pXa" secondAttribute="trailing" constant="-25" id="29C-3S-mVr"/>
+                <constraint firstItem="04D-xG-XGc" firstAttribute="height" secondItem="x94-nN-CKa" secondAttribute="height" id="2Qn-IJ-dAR"/>
+                <constraint firstItem="x94-nN-CKa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3RJ-eB-ToO"/>
+                <constraint firstItem="04D-xG-XGc" firstAttribute="centerY" secondItem="x94-nN-CKa" secondAttribute="centerY" id="511-ZF-b3o"/>
+                <constraint firstItem="USV-Ng-SR1" firstAttribute="height" secondItem="VzG-Ot-Imh" secondAttribute="height" id="5Ab-a0-wM0"/>
+                <constraint firstItem="x94-nN-CKa" firstAttribute="leading" secondItem="04D-xG-XGc" secondAttribute="trailing" constant="-25" id="5CT-DK-1uO"/>
+                <constraint firstItem="kFi-cj-pXa" firstAttribute="width" secondItem="USV-Ng-SR1" secondAttribute="width" id="7IO-De-adc"/>
+                <constraint firstItem="jBn-F5-LWG" firstAttribute="centerY" secondItem="SSL-I0-Gij" secondAttribute="centerY" id="9ZB-7i-Gix"/>
+                <constraint firstItem="04D-xG-XGc" firstAttribute="width" secondItem="x94-nN-CKa" secondAttribute="width" id="Dh4-T2-Vs4"/>
+                <constraint firstItem="leO-kS-Bt9" firstAttribute="leading" secondItem="x94-nN-CKa" secondAttribute="trailing" constant="-25" id="Dox-RW-FrP"/>
+                <constraint firstItem="x94-nN-CKa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ebe-qS-aST"/>
+                <constraint firstItem="UZQ-Ol-MGr" firstAttribute="width" secondItem="kFi-cj-pXa" secondAttribute="width" id="Jhq-k5-Qpa"/>
+                <constraint firstItem="jBn-F5-LWG" firstAttribute="width" secondItem="SSL-I0-Gij" secondAttribute="width" id="Kh4-69-cht"/>
+                <constraint firstItem="rGi-7e-RYp" firstAttribute="height" secondItem="jBn-F5-LWG" secondAttribute="height" id="LRe-JC-MUS"/>
+                <constraint firstItem="USV-Ng-SR1" firstAttribute="centerY" secondItem="VzG-Ot-Imh" secondAttribute="centerY" id="Mwd-jo-AlJ"/>
+                <constraint firstItem="leO-kS-Bt9" firstAttribute="centerY" secondItem="x94-nN-CKa" secondAttribute="centerY" id="RKh-VE-kYM"/>
+                <constraint firstItem="VzG-Ot-Imh" firstAttribute="width" secondItem="leO-kS-Bt9" secondAttribute="width" id="RXE-Z7-hFO"/>
+                <constraint firstItem="04D-xG-XGc" firstAttribute="leading" secondItem="SSL-I0-Gij" secondAttribute="trailing" constant="-25" id="Rvh-7R-xrL"/>
+                <constraint firstItem="SSL-I0-Gij" firstAttribute="height" secondItem="04D-xG-XGc" secondAttribute="height" id="Shp-vW-rUB"/>
+                <constraint firstItem="leO-kS-Bt9" firstAttribute="height" secondItem="x94-nN-CKa" secondAttribute="height" id="TMD-i4-xI6"/>
+                <constraint firstItem="rGi-7e-RYp" firstAttribute="centerY" secondItem="jBn-F5-LWG" secondAttribute="centerY" id="TXl-zh-7Yn"/>
+                <constraint firstItem="rGi-7e-RYp" firstAttribute="width" secondItem="jBn-F5-LWG" secondAttribute="width" id="VbG-lX-VDj"/>
+                <constraint firstItem="VzG-Ot-Imh" firstAttribute="leading" secondItem="leO-kS-Bt9" secondAttribute="trailing" constant="-25" id="Ze7-BO-htv"/>
+                <constraint firstItem="jBn-F5-LWG" firstAttribute="leading" secondItem="rGi-7e-RYp" secondAttribute="trailing" constant="-25" id="aY4-iE-nkU"/>
+                <constraint firstItem="SSL-I0-Gij" firstAttribute="width" secondItem="04D-xG-XGc" secondAttribute="width" id="b8c-4B-956"/>
+                <constraint firstItem="UZQ-Ol-MGr" firstAttribute="centerY" secondItem="kFi-cj-pXa" secondAttribute="centerY" id="bNs-pq-XP3"/>
+                <constraint firstItem="kFi-cj-pXa" firstAttribute="leading" secondItem="USV-Ng-SR1" secondAttribute="trailing" constant="-25" id="dsa-cb-kSf"/>
+                <constraint firstItem="leO-kS-Bt9" firstAttribute="width" secondItem="x94-nN-CKa" secondAttribute="width" id="fIg-Tw-Uul"/>
+                <constraint firstItem="USV-Ng-SR1" firstAttribute="leading" secondItem="VzG-Ot-Imh" secondAttribute="trailing" constant="-25" id="hgN-s4-hVo"/>
+                <constraint firstItem="UZQ-Ol-MGr" firstAttribute="height" secondItem="kFi-cj-pXa" secondAttribute="height" id="imR-8b-49F"/>
+                <constraint firstItem="VzG-Ot-Imh" firstAttribute="height" secondItem="leO-kS-Bt9" secondAttribute="height" id="m36-vE-cKk"/>
+                <constraint firstItem="USV-Ng-SR1" firstAttribute="width" secondItem="VzG-Ot-Imh" secondAttribute="width" id="nEY-Y7-9ra"/>
+                <constraint firstItem="SSL-I0-Gij" firstAttribute="leading" secondItem="jBn-F5-LWG" secondAttribute="trailing" constant="-25" id="p2g-9V-eF4"/>
+                <constraint firstItem="jBn-F5-LWG" firstAttribute="height" secondItem="SSL-I0-Gij" secondAttribute="height" id="sgM-0T-Vzt"/>
+                <constraint firstItem="VzG-Ot-Imh" firstAttribute="centerY" secondItem="leO-kS-Bt9" secondAttribute="centerY" id="vK1-Zv-WSt"/>
+                <constraint firstItem="kFi-cj-pXa" firstAttribute="centerY" secondItem="USV-Ng-SR1" secondAttribute="centerY" id="vel-xR-EK7"/>
+                <constraint firstItem="SSL-I0-Gij" firstAttribute="centerY" secondItem="04D-xG-XGc" secondAttribute="centerY" id="wtq-wQ-sFo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-0.5" y="-353"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile" width="180" height="180"/>
+    </resources>
+</document>

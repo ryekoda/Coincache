@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		94139DDA2078C198001A6491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DD92078C198001A6491 /* AppDelegate.swift */; };
-		94139DDC2078C198001A6491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DDB2078C198001A6491 /* ViewController.swift */; };
+		94139DDC2078C198001A6491 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DDB2078C198001A6491 /* HomeVC.swift */; };
 		94139DDF2078C198001A6491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94139DDD2078C198001A6491 /* Main.storyboard */; };
 		94139DE12078C198001A6491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94139DE02078C198001A6491 /* Assets.xcassets */; };
 		94139DE42078C198001A6491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94139DE22078C198001A6491 /* LaunchScreen.storyboard */; };
 		94139DEF2078C199001A6491 /* PotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DEE2078C199001A6491 /* PotsTests.swift */; };
 		94139DFA2078C199001A6491 /* PotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DF92078C199001A6491 /* PotsUITests.swift */; };
+		94139E092078C46A001A6491 /* HomeGeneralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139E072078C46A001A6491 /* HomeGeneralCell.swift */; };
+		94139E0A2078C46A001A6491 /* HomeGeneralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94139E082078C46A001A6491 /* HomeGeneralCell.xib */; };
+		946F440D2078D9A900B9D921 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F440C2078D9A900B9D921 /* PostVC.swift */; };
+		946F44112078DA9A00B9D921 /* AddPriceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F44102078DA9A00B9D921 /* AddPriceVC.swift */; };
+		946F44142078DC9E00B9D921 /* PotDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F44132078DC9E00B9D921 /* PotDetailVC.swift */; };
+		946F44182079626900B9D921 /* ContributorsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 946F44172079626900B9D921 /* ContributorsView.xib */; };
+		946F441A2079636A00B9D921 /* ContributorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946F44192079636A00B9D921 /* ContributorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		94139DD62078C198001A6491 /* Pots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94139DD92078C198001A6491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94139DDB2078C198001A6491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94139DDB2078C198001A6491 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		94139DDE2078C198001A6491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94139DE02078C198001A6491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94139DE32078C198001A6491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,13 @@
 		94139DF52078C199001A6491 /* PotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94139DF92078C199001A6491 /* PotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsUITests.swift; sourceTree = "<group>"; };
 		94139DFB2078C199001A6491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94139E072078C46A001A6491 /* HomeGeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGeneralCell.swift; sourceTree = "<group>"; };
+		94139E082078C46A001A6491 /* HomeGeneralCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeGeneralCell.xib; sourceTree = "<group>"; };
+		946F440C2078D9A900B9D921 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		946F44102078DA9A00B9D921 /* AddPriceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPriceVC.swift; sourceTree = "<group>"; };
+		946F44132078DC9E00B9D921 /* PotDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotDetailVC.swift; sourceTree = "<group>"; };
+		946F44172079626900B9D921 /* ContributorsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContributorsView.xib; sourceTree = "<group>"; };
+		946F44192079636A00B9D921 /* ContributorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,14 @@
 		94139DD82078C198001A6491 /* Pots */ = {
 			isa = PBXGroup;
 			children = (
-				94139DD92078C198001A6491 /* AppDelegate.swift */,
-				94139DDB2078C198001A6491 /* ViewController.swift */,
+				94139E0C2078C4A3001A6491 /* Home */,
+				946F44152078DCA500B9D921 /* PotDetail */,
+				946F440F2078D9B200B9D921 /* Post */,
+				946F44122078DA9E00B9D921 /* Price */,
 				94139DDD2078C198001A6491 /* Main.storyboard */,
 				94139DE02078C198001A6491 /* Assets.xcassets */,
-				94139DE22078C198001A6491 /* LaunchScreen.storyboard */,
 				94139DE52078C198001A6491 /* Info.plist */,
+				946F441620793F9700B9D921 /* Supporting Files */,
 			);
 			path = Pots;
 			sourceTree = "<group>";
@@ -123,6 +139,83 @@
 				94139DFB2078C199001A6491 /* Info.plist */,
 			);
 			path = PotsUITests;
+			sourceTree = "<group>";
+		};
+		94139E0B2078C492001A6491 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				94139E072078C46A001A6491 /* HomeGeneralCell.swift */,
+				94139E082078C46A001A6491 /* HomeGeneralCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		94139E0C2078C4A3001A6491 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				94139E0D2078C4AE001A6491 /* Controller */,
+				94139E0E2078C55D001A6491 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		94139E0D2078C4AE001A6491 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94139DDB2078C198001A6491 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94139E0E2078C55D001A6491 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				946F44172079626900B9D921 /* ContributorsView.xib */,
+				946F44192079636A00B9D921 /* ContributorsView.swift */,
+				94139E0B2078C492001A6491 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		946F440E2078D9AC00B9D921 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				946F440C2078D9A900B9D921 /* PostVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		946F440F2078D9B200B9D921 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				946F440E2078D9AC00B9D921 /* Controller */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		946F44122078DA9E00B9D921 /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				946F44102078DA9A00B9D921 /* AddPriceVC.swift */,
+			);
+			path = Price;
+			sourceTree = "<group>";
+		};
+		946F44152078DCA500B9D921 /* PotDetail */ = {
+			isa = PBXGroup;
+			children = (
+				946F44132078DC9E00B9D921 /* PotDetailVC.swift */,
+			);
+			path = PotDetail;
+			sourceTree = "<group>";
+		};
+		946F441620793F9700B9D921 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94139DD92078C198001A6491 /* AppDelegate.swift */,
+				94139DE22078C198001A6491 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +325,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946F44182079626900B9D921 /* ContributorsView.xib in Resources */,
 				94139DE42078C198001A6491 /* LaunchScreen.storyboard in Resources */,
 				94139DE12078C198001A6491 /* Assets.xcassets in Resources */,
 				94139DDF2078C198001A6491 /* Main.storyboard in Resources */,
+				94139E0A2078C46A001A6491 /* HomeGeneralCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +354,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94139DDC2078C198001A6491 /* ViewController.swift in Sources */,
+				94139E092078C46A001A6491 /* HomeGeneralCell.swift in Sources */,
+				946F44112078DA9A00B9D921 /* AddPriceVC.swift in Sources */,
+				94139DDC2078C198001A6491 /* HomeVC.swift in Sources */,
+				946F440D2078D9A900B9D921 /* PostVC.swift in Sources */,
 				94139DDA2078C198001A6491 /* AppDelegate.swift in Sources */,
+				946F44142078DC9E00B9D921 /* PotDetailVC.swift in Sources */,
+				946F441A2079636A00B9D921 /* ContributorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
