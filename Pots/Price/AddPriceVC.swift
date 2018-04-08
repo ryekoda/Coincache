@@ -53,7 +53,7 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     }
     func doneWasTapped() {
         dismissKeyboard()
-        if let price = self.priceTextField.text {
+        if let price = self.priceTextField.text, !price.isEmpty {
             
            SVProgressHUD.showSuccess(withStatus: "Added $\(price) successfully!")
         }

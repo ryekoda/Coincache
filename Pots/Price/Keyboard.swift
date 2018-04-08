@@ -17,6 +17,8 @@ class Keyboard: UIView {
     
     weak var delegate: KeyboardDelegate?
     
+    @IBOutlet weak var doneBtn: RoundButton!
+    
     @IBAction func keyTapped(sender: UIButton) {
         if let char = sender.currentTitle {
             self.delegate?.keyWasTapped(character: char)
