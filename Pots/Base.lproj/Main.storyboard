@@ -121,25 +121,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ 0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ME4-Wu-xtk">
-                                <rect key="frame" x="30" y="194" width="315" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvp-wj-yZm">
-                                <rect key="frame" x="30" y="110" width="315" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvp-wj-yZm">
+                                <rect key="frame" x="10" y="74" width="355" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="EaP-fP-a0y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="0.14117647059999999" green="0.12941176469999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the amount you want to invest?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl6-pd-wIp">
+                                <rect key="frame" x="10" y="164" width="355" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$ 0.00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ME4-Wu-xtk">
+                                <rect key="frame" x="30" y="204" width="315" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="x2F-e3-lr8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Rvp-wj-yZm" firstAttribute="leading" secondItem="Hn5-De-G4l" secondAttribute="leading" constant="10" id="3bz-nE-k5v"/>
+                            <constraint firstItem="Hn5-De-G4l" firstAttribute="trailing" secondItem="Rvp-wj-yZm" secondAttribute="trailing" constant="10" id="6zR-OH-DgV"/>
+                            <constraint firstItem="ME4-Wu-xtk" firstAttribute="top" secondItem="cl6-pd-wIp" secondAttribute="bottom" constant="20" id="7gE-tK-AvR"/>
+                            <constraint firstItem="cl6-pd-wIp" firstAttribute="top" secondItem="Rvp-wj-yZm" secondAttribute="bottom" constant="10" id="9I9-bC-EeU"/>
+                            <constraint firstItem="Hn5-De-G4l" firstAttribute="trailing" secondItem="cl6-pd-wIp" secondAttribute="trailing" constant="10" id="D7Z-1W-LN5"/>
                             <constraint firstItem="Hn5-De-G4l" firstAttribute="trailing" secondItem="ME4-Wu-xtk" secondAttribute="trailing" constant="30" id="ELK-li-2iC"/>
                             <constraint firstItem="ME4-Wu-xtk" firstAttribute="leading" secondItem="Hn5-De-G4l" secondAttribute="leading" constant="30" id="IZV-qV-HOc"/>
-                            <constraint firstItem="ME4-Wu-xtk" firstAttribute="top" secondItem="Hn5-De-G4l" secondAttribute="top" constant="130" id="VEz-8e-yG6"/>
+                            <constraint firstItem="cl6-pd-wIp" firstAttribute="leading" secondItem="Hn5-De-G4l" secondAttribute="leading" constant="10" id="dde-wF-3qg"/>
+                            <constraint firstItem="Rvp-wj-yZm" firstAttribute="top" secondItem="Hn5-De-G4l" secondAttribute="top" constant="10" id="eJb-yc-7Af"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hn5-De-G4l"/>
                     </view>
