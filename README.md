@@ -29,8 +29,8 @@ We're planning to further build out a feature that allows socially conscious inv
 
 ## Team
 
-Jade Shyu - http://linkedin.com/in/jadeshyu - http://github.com/jadeshyu
-Dima
-Ryan
-Farn-Yu
-Steven Li
+* Jade Shyu - http://linkedin.com/in/jadeshyu - http://github.com/jadeshyu
+* Dima
+* Ryan
+* Farn-Yu
+* Steven Li

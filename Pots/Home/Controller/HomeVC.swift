@@ -9,12 +9,20 @@
 import UIKit
 import Alamofire
 
-class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeVC: UIViewController {
 
     var refreshControl: UIRefreshControl!
     @IBOutlet weak var tableView: UITableView!
     
+//<<<<<<< HEAD
     var potList: [Dictionary<String, Any>] = []
+//=======
+    private struct identifiers {
+        static let generalCell = "HomeGeneralCell"
+    }
+    
+//    var userPotList: [String] = []
+//>>>>>>> bea827df83e4009142dc0751b9cd084059bea9a0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,11 +61,6 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //        }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -78,18 +81,15 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.refreshControl.addTarget(self, action: #selector(self.tableRefreshed), for: .valueChanged)
         self.tableView.addSubview(self.refreshControl)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @objc func tableRefreshed() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
             self.refreshControl.endRefreshing()
         }
     }
-    
+}
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "Home2Detail", sender: self)
     }
@@ -100,10 +100,6 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.potList.count
-    }
-    
-    private struct identifiers {
-        static let generalCell = "HomeGeneralCell"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

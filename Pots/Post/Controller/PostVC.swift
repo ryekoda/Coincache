@@ -12,14 +12,23 @@ class PostVC: UIViewController {
 
     var titleText: String?
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+//        UINavigationBar.appearance().barTintColor = UIColor.black
+//        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func keyTapped(sender: UIButton) {
         present((sender.titleLabel?.text)!)
+    }
+    
+    @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func present(_ title: String) {
@@ -34,19 +43,5 @@ class PostVC: UIViewController {
                 vc.titleText = self.titleText
             }
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.default
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072F182B2079A3260011CE47 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F18292079A3260011CE47 /* CardView.swift */; };
+		072F182C2079A3260011CE47 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F182A2079A3260011CE47 /* RoundButton.swift */; };
 		2714067D207988FF00B45808 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714067C207988FF00B45808 /* Keyboard.swift */; };
 		2714067F20798A5900B45808 /* NumPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2714067B207988FE00B45808 /* NumPad.xib */; };
 		2E908CC6FC35565D0A103B4A /* Pods_PotsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E13EF6B97C220F59706EB0 /* Pods_PotsTests.framework */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		072F18292079A3260011CE47 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		072F182A2079A3260011CE47 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		2714067B207988FE00B45808 /* NumPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumPad.xib; sourceTree = "<group>"; };
 		2714067C207988FF00B45808 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		293D01E510C5F738F742F436 /* Pods-Pots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pots/Pods-Pots.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				946F440C2078D9A900B9D921 /* PostVC.swift */,
+				072F18292079A3260011CE47 /* CardView.swift */,
+				072F182A2079A3260011CE47 /* RoundButton.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,8 +253,8 @@
 		946F44152078DCA500B9D921 /* PotDetail */ = {
 			isa = PBXGroup;
 			children = (
-				946F441B2079745600B9D921 /* HomeDetail.storyboard */,
 				946F44132078DC9E00B9D921 /* PotDetailVC.swift */,
+				946F441B2079745600B9D921 /* HomeDetail.storyboard */,
 				946F4422207974A800B9D921 /* Cell */,
 			);
 			path = PotDetail;
@@ -522,6 +528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072F182C2079A3260011CE47 /* RoundButton.swift in Sources */,
 				94139E092078C46A001A6491 /* HomeGeneralCell.swift in Sources */,
 				946F44112078DA9A00B9D921 /* AddPriceVC.swift in Sources */,
 				2714067D207988FF00B45808 /* Keyboard.swift in Sources */,
@@ -531,6 +538,7 @@
 				946F4420207974A400B9D921 /* DetailOverviewCell.swift in Sources */,
 				946F44142078DC9E00B9D921 /* PotDetailVC.swift in Sources */,
 				946F441A2079636A00B9D921 /* ContributorsView.swift in Sources */,
+				072F182B2079A3260011CE47 /* CardView.swift in Sources */,
 				946F44252079750600B9D921 /* DetailGeneralCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

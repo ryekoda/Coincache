@@ -8,10 +8,14 @@
 
 import UIKit
 
-class PotDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class PotDetailVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    private struct identifiers {
+        static let detailOverviewCell = "DetailOverviewCell"
+        static let detailGeneralCell = "DetailGeneralCell"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,11 +33,9 @@ class PotDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         let generalNib = UINib(nibName: "DetailGeneralCell", bundle: nil)
         self.tableView.register(generalNib, forCellReuseIdentifier: "DetailGeneralCell")
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+extension PotDetailVC: UITableViewDelegate, UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -76,11 +78,6 @@ class PotDetailVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         }
         
         return 50.0
-    }
-    
-    private struct identifiers {
-        static let detailOverviewCell = "DetailOverviewCell"
-        static let detailGeneralCell = "DetailGeneralCell"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

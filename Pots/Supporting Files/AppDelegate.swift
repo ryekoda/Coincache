@@ -12,12 +12,30 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
+        setupNavBar()
+        
         return true
+    }
+    
+    fileprivate func setupNavBar() {
+        
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
+        UINavigationBar.appearance().barTintColor = UIColor(red: 36.0/255.0, green:33.0/255.0, blue: 62.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
+        if let barFont = UIFont(name: "Helvetica-Neue", size: 24.0) {
+            if #available(iOS 11.0, *) {
+                UINavigationBar.appearance().largeTitleTextAttributes = [kCTForegroundColorAttributeName: UIColor.white, kCTFontAttributeName: barFont] as [NSAttributedStringKey : Any] as [NSAttributedStringKey : Any]
+            } else {
+                UINavigationBar.appearance().titleTextAttributes = [kCTForegroundColorAttributeName: UIColor.white, kCTFontAttributeName: barFont] as [NSAttributedStringKey : Any]
+            }
+        }
+        
+        UITabBar.appearance().tintColor = .orange
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
