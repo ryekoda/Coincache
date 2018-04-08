@@ -323,6 +323,7 @@
 				94139DD32078C198001A6491 /* Frameworks */,
 				94139DD42078C198001A6491 /* Resources */,
 				E5FDC6835263197E7259E554 /* [CP] Embed Pods Frameworks */,
+				5866947CC48C6EBCE5CCB29F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,6 +342,8 @@
 				94139DE62078C199001A6491 /* Sources */,
 				94139DE72078C199001A6491 /* Frameworks */,
 				94139DE82078C199001A6491 /* Resources */,
+				E072A3167DC87C5A1BD45FA4 /* [CP] Embed Pods Frameworks */,
+				BABAC2FF2C95083E2D62B8D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -360,6 +363,8 @@
 				94139DF12078C199001A6491 /* Sources */,
 				94139DF22078C199001A6491 /* Frameworks */,
 				94139DF32078C199001A6491 /* Resources */,
+				E17502192D58640284267B26 /* [CP] Embed Pods Frameworks */,
+				32FE2D2DD3EF381020D97F39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,6 +456,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		32FE2D2DD3EF381020D97F39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PotsUITests/Pods-PotsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5866947CC48C6EBCE5CCB29F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pots/Pods-Pots-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6268C0CFE0C028A181B35EBF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -505,6 +540,51 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BABAC2FF2C95083E2D62B8D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PotsTests/Pods-PotsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E072A3167DC87C5A1BD45FA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PotsTests/Pods-PotsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17502192D58640284267B26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PotsUITests/Pods-PotsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E5FDC6835263197E7259E554 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,11 +594,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pots/Pods-Pots-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

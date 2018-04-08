@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class AddPriceVC: UIViewController, KeyboardDelegate {
     
@@ -29,7 +30,7 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
         guard let title = titleText else {
             return
         }
-        if title == "1" {
+        if title == "Gain" {
             titleLabel.text = hardPhrases[Int(arc4random_uniform(UInt32(hardPhrases.count-1)))]
         } else {
             titleLabel.text = easyPhrases[Int(arc4random_uniform(UInt32(easyPhrases.count-1)))]
@@ -52,6 +53,11 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     }
     func doneWasTapped() {
         dismissKeyboard()
+        if let price = self.priceTextField.text {
+            
+           SVProgressHUD.showSuccess(withStatus: "Added $\(price) successfully!")
+        }
+        
         self.dismiss(animated: true, completion: nil)
     }
 }
