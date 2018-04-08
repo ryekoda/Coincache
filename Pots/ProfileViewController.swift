@@ -17,6 +17,9 @@ var beforeBtc: Double = 0.12
 
 class ProfileViewController: UIViewController {
 
+    var currentCash: Double = 0.0;
+    var currentBtc: Double = 0.0;
+    
     @IBOutlet weak var usdAmount: UILabel!
     @IBOutlet weak var btcAmount: UILabel!
     
@@ -24,7 +27,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         let notiName = Notification.Name("pushNotification")
-        NotificationCenter.default.addObserver(self, selector: #selector(self.hello), name: notiName, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.handlePriceDown), name: notiName, object: nil)
         
     }
     @IBAction func cancel(_ sender: UIBarButtonItem) {
@@ -38,12 +41,37 @@ class ProfileViewController: UIViewController {
         btcAmount.text = String(format: "%.2f", beforeBtc)
     }
 
-    @objc func hello() {
+    @objc func handlePriceDown() {
         
         print("We are good!!!")
         
-        usdAmount.text = String(format: "%.2f", userCash)
-        btcAmount.text = String(format: "%.2f", btc)
+        //usdAmount.text = String(format: "%.2f", userCash)
+        //btcAmount.text = String(format: "%.2f", btc)
+        
+        currentCash = 0
+        currentBtc = 0.12
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+            self.animateNumberChange()
+        })
+    }
+    
+    func animateNumberChange() {
+        currentCash = currentCash + 1;
+        if (currentCash <= 50) {
+            usdAmount.text = String(format: "%.2f", currentCash)
+        }
+        
+        currentBtc = currentBtc - 0.01;
+        if (currentBtc >= 0) {
+            btcAmount.text = String(format: "%.2f", currentBtc)
+        }
+
+        if (currentCash < 50) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                self.animateNumberChange()
+            })
+        }
     }
 
 }
