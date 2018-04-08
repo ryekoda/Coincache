@@ -110,8 +110,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifiers.generalCell, for: indexPath) as! HomeGeneralCell
         
         let pot = self.potList[indexPath.row] as? Dictionary<String, Any>
-//        cell.potPriceLabel.text = "$\(pot!["amount"] as! Int)"
-        cell.potPriceLabel.text = "$\(self.prices[indexPath.row])"
+        cell.potPriceLabel.text = "$\(pot!["amount"] as! Int)"
+//        cell.potPriceLabel.text = "$\(self.prices[indexPath.row])"
         let newOrderProfiles = self.contributorProfiles.shuffled()
 
         cell.contributorsContainerView.contributorImageView1.image = UIImage(named: "\(newOrderProfiles[0])")
