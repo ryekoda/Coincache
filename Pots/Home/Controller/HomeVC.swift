@@ -14,6 +14,52 @@ class HomeVC: UIViewController {
     var refreshControl: UIRefreshControl!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var segment: UISegmentedControl!
+    var walet = ProfileViewController()
+    
+    private lazy var profileVC: ProfileViewController = {
+        // Load Storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        // Instantiate View Controller
+        var viewController = storyboard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileViewController
+        
+        // Add View Controller as Child View Controller
+        self.add(asChildViewController: viewController)
+        
+        return viewController
+    }()
+    
+    private func add(asChildViewController viewController: UIViewController) {
+        // Add Child View Controller
+        addChildViewController(viewController)
+        
+        // Add Child View as Subview
+        view.addSubview(viewController.view)
+        
+        // Configure Child View
+        viewController.view.frame = view.bounds
+        viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        // Notify Child View Controller
+        viewController.didMove(toParentViewController: self)
+    }
+    
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+        switch segment.selectedSegmentIndex {
+        case 0:
+            tableView.isHidden = false
+            profileVC.view.isHidden = true
+        //popularView.isHidden = false
+        case 1:
+            tableView.isHidden = true
+            profileVC.view.isHidden = false
+        //popularView.isHidden = true
+        default:
+            break;
+        }
+    }
+    
 //<<<<<<< HEAD
     var potList: [Dictionary<String, Any>] = []
     var prices = ["201,702.52", "50,080.75", "29,100.89", "91,730.22", "1,290.73"]
@@ -31,6 +77,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.prepareUI()
+        setupView()
         
         Alamofire.request("http://192.168.100.233:3000/pots").responseJSON { response in
             print("Request: \(String(describing: response.request))")   // original url request
@@ -63,6 +110,10 @@ class HomeVC: UIViewController {
 //                    print("JSON: \(JSON)")
 //                }
 //        }
+    }
+    
+    func setupView() {
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -9,7 +9,6 @@
 import UIKit
 import SVProgressHUD
 
-var userCash: Double = 50.0
 
 class AddPriceVC: UIViewController, KeyboardDelegate {
     
@@ -24,6 +23,21 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
         super.viewDidLoad()
         setupKeyBoard()
         setupView()
+        setNavigationBar()
+    }
+    
+    func setNavigationBar() {
+        let screenSize: CGRect = UIScreen.main.bounds
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: screenSize.width, height: 44))
+        let navItem = UINavigationItem(title: "")
+        let doneItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: nil, action: #selector(done))
+        navItem.leftBarButtonItem = doneItem
+        navBar.setItems([navItem], animated: false)
+        self.view.addSubview(navBar)
+    }
+    
+    @objc func done() { // remove @objc for Swift 3
+        dismiss(animated: true, completion: nil)
     }
     
     fileprivate func setupView() {
@@ -55,14 +69,33 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     }
     func doneWasTapped() {
         dismissKeyboard()
-        if let price = self.priceTextField.text, !price.isEmpty, price != "." {
-           userCash += Double(price)!
-           SVProgressHUD.showSuccess(withStatus: "Added $\(price) successfully!")
-            
-        }
         
-        self.dismiss(animated: true, completion: nil)
+        if let price = self.priceTextField.text, !price.isEmpty, price != "." {
+           let amount = Double(price)!
+           userCash -= amount
+           btc += amount/10
+           SVProgressHUD.showSuccess(withStatus: "Added $\(price) successfully!")
+           present()
+           
+            
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
+    
+    func present() {
+        //self.titleText = title
+        performSegue(withIdentifier: "Profile2Home", sender: self)
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "Profile2Home" {
+//            if let vc = segue.destination as? AddPriceVC {
+//
+//                vc.titleText = self.titleText
+//            }
+//        }
+//    }
 }
 extension AddPriceVC: UITextFieldDelegate {
     

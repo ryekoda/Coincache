@@ -13,7 +13,7 @@
         <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="Pots" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="BYZ-38-t0r" customClass="HomeVC" customModule="Pots" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,8 +52,11 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="World"/>
-                                <segment title="Personal"/>
+                                <segment title="$"/>
                             </segments>
+                            <connections>
+                                <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="wTw-ze-6CM"/>
+                            </connections>
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="X5c-vj-fz6">
                             <connections>
@@ -62,6 +65,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="segment" destination="dRE-nx-2K1" id="Tyn-4t-6BW"/>
                         <outlet property="tableView" destination="1I6-VJ-9J8" id="dYh-qe-R9c"/>
                         <segue destination="jo0-Ih-DUS" kind="show" identifier="Home2Detail" id="6Ls-Vp-HDU"/>
                     </connections>
@@ -121,11 +125,12 @@
                     <connections>
                         <outlet property="priceTextField" destination="ME4-Wu-xtk" id="Wea-8k-cq3"/>
                         <outlet property="titleLabel" destination="Rvp-wj-yZm" id="S0T-JG-XnK"/>
+                        <segue destination="OLO-tp-rWW" kind="presentation" identifier="Profile2Home" id="Zvb-Vt-4xd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VV2-bN-cPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2644" y="121"/>
+            <point key="canvasLocation" x="2743" y="121"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xuc-D7-B5j">
@@ -455,6 +460,20 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFg-wY-1ID">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="58D-71-ltI">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="2Us-Ie-fzj">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="cancel:" destination="OLO-tp-rWW" id="Yqh-Oq-2tk"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
@@ -473,6 +492,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="52p-04-lmA"/>
                     <connections>
+                        <outlet property="btcAmount" destination="mfN-C7-Z64" id="XW0-KI-11Y"/>
                         <outlet property="usdAmount" destination="eoz-Qb-IVV" id="SXC-vl-BKT"/>
                     </connections>
                 </viewController>
@@ -499,4 +519,7 @@
             <point key="canvasLocation" x="1061.5999999999999" y="846.9265367316342"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="RAQ-3K-au9"/>
+    </inferredMetricsTieBreakers>
 </document>
