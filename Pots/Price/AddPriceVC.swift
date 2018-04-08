@@ -27,15 +27,15 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     fileprivate func setupView() {
         self.priceTextField.becomeFirstResponder()
         
-        guard let title = titleText else {
-            return
-        }
         if title == "Gain" {
             titleLabel.text = hardPhrases[Int(arc4random_uniform(UInt32(hardPhrases.count-1)))]
         } else {
             titleLabel.text = easyPhrases[Int(arc4random_uniform(UInt32(easyPhrases.count-1)))]
         }
         self.title = titleText
+        guard let title = titleText else {
+            return
+        }
     }
     
     fileprivate func setupKeyBoard() {

@@ -9,6 +9,16 @@
 import UIKit
 
 class PotDetailVC: UIViewController, JoinGroupDelegate {
+    func profileTapped() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "ProfileVC")
+//        self.present(controller, animated: true, completion: nil)
+//        
+//        let profileVC = ProfileViewController()
+        navigationController?.pushViewController(controller, animated: true)
+        
+    }
+    
     func joinGroupButtonWasTapped() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "PriceVC")
