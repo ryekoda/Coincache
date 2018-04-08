@@ -16,6 +16,10 @@ class HomeVC: UIViewController {
     
 //<<<<<<< HEAD
     var potList: [Dictionary<String, Any>] = []
+    var prices = ["201,702.52", "50,080.75", "29,100.89", "91,730.22", "1,290.73"]
+    var contributorProfiles = ["photo1", "photo2", "photo3", "photo4", "photo5", "photo6", "photo7", "photo8", "photo9", "photo10", "photo11"]
+    var contributorsNames = ["Ryan", "Jade", "Dima", "Farn-yu", "Frank", "Blake", "Adam", "Ashley", "Pat", "Lisi"]
+    var stashTimes = ["24h left", "12h left", "5h left", "Closed", "Closed"]
 //=======
     private struct identifiers {
         static let generalCell = "HomeGeneralCell"
@@ -106,8 +110,57 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifiers.generalCell, for: indexPath) as! HomeGeneralCell
         
         let pot = self.potList[indexPath.row] as? Dictionary<String, Any>
-        cell.potPriceLabel.text = "$\(pot!["amount"] as! Int)"
+//        cell.potPriceLabel.text = "$\(pot!["amount"] as! Int)"
+        cell.potPriceLabel.text = "$\(self.prices[indexPath.row])"
+        let newOrderProfiles = self.contributorProfiles.shuffled()
+
+        cell.contributorsContainerView.contributorImageView1.image = UIImage(named: "\(newOrderProfiles[0])")
+        cell.contributorsContainerView.contributorImageView2.image = UIImage(named: "\(newOrderProfiles[1])")
+        cell.contributorsContainerView.contributorImageView3.image = UIImage(named: "\(newOrderProfiles[2])")
+        cell.contributorsContainerView.contributorImageView4.image = UIImage(named: "\(newOrderProfiles[3])")
+        cell.contributorsContainerView.contributorImageView5.image = UIImage(named: "\(newOrderProfiles[4])")
+        cell.contributorsContainerView.contributorImageView6.image = UIImage(named: "\(newOrderProfiles[5])")
+        cell.contributorsContainerView.contributorImageView7.image = UIImage(named: "\(newOrderProfiles[6])")
+        cell.contributorsContainerView.contributorImageView8.image = UIImage(named: "\(newOrderProfiles[7])")
+        cell.contributorsContainerView.contributorImageView9.image = UIImage(named: "\(newOrderProfiles[8])")
+        cell.contributorsContainerView.contributorImageView10.image = UIImage(named: "\(newOrderProfiles[9])")
+
+        let newOrderNames = self.contributorsNames.shuffled()
+        var firstFive = newOrderNames[0..<3]
+        let jjj = firstFive.joined(separator: ", ")
+//        let stringRepresentation = ", ".join(firstFive)
+        cell.contributorsNamesLabel.text = "\(jjj), +7 others"
+        cell.timeLeftLabel.text = self.stashTimes[indexPath.row]
+        
+        if self.stashTimes[indexPath.row] == "Closed" {
+            cell.timeLeftLabel.textColor = UIColor.red
+            cell.timeLeftLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
+        }
         return cell
+    }
+}
+
+extension MutableCollection {
+    /// Shuffles the contents of this collection.
+    mutating func shuffle() {
+        let c = count
+        guard c > 1 else { return }
+        
+        for (firstUnshuffled, unshuffledCount) in zip(indices, stride(from: c, to: 1, by: -1)) {
+            // Change `Int` in the next line to `IndexDistance` in < Swift 4.1
+            let d: Int = numericCast(arc4random_uniform(numericCast(unshuffledCount)))
+            let i = index(firstUnshuffled, offsetBy: d)
+            swapAt(firstUnshuffled, i)
+        }
+    }
+}
+
+extension Sequence {
+    /// Returns an array with the contents of this sequence, shuffled.
+    func shuffled() -> [Element] {
+        var result = Array(self)
+        result.shuffle()
+        return result
     }
 }
 

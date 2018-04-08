@@ -10,7 +10,10 @@ import UIKit
 
 class HomeGeneralCell: UITableViewCell {
     
+    @IBOutlet weak var timeLeftLabel: UILabel!
     @IBOutlet weak var potPriceLabel: UILabel!
+    @IBOutlet weak var contributorsContainerView: ContributorsView!
+    @IBOutlet weak var contributorsNamesLabel: UILabel!
     @IBOutlet weak var contributorsLeftConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {

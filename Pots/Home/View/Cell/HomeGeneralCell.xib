@@ -68,8 +68,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="contributorsContainerView" destination="rSZ-1G-gdn" id="8Ja-6V-7Gg"/>
                 <outlet property="contributorsLeftConstraint" destination="kve-qd-qjh" id="KyJ-9F-s7r"/>
+                <outlet property="contributorsNamesLabel" destination="kW6-H1-PEf" id="3xL-jL-5G3"/>
                 <outlet property="potPriceLabel" destination="4Ua-PL-1Li" id="rge-wF-eE7"/>
+                <outlet property="timeLeftLabel" destination="vT6-bg-V3M" id="CN8-Qr-YhI"/>
             </connections>
             <point key="canvasLocation" x="40" y="145"/>
         </tableViewCell>
