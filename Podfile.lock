@@ -1,16 +1,22 @@
 PODS:
   - Alamofire (4.6.0)
+  - PubNub (4.7.4):
+    - PubNub/Core (= 4.7.4)
+  - PubNub/Core (4.7.4)
 
 DEPENDENCIES:
   - Alamofire
+  - PubNub (~> 4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - PubNub
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  PubNub: de3a84200472d2fadfc7cf79622444a837a24b42
 
-PODFILE CHECKSUM: a2e0e7e492cc667ec72ca5cac0b91501c6d89beb
+PODFILE CHECKSUM: 095eaf7a0aad90bdf2ebeb82a9e0248c8a6342be
 
 COCOAPODS: 1.5.0

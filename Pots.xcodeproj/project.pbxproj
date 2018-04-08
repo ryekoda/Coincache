@@ -87,6 +87,7 @@
 		946F441F207974A400B9D921 /* DetailOverviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailOverviewCell.xib; sourceTree = "<group>"; };
 		946F44232079750600B9D921 /* DetailGeneralCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGeneralCell.swift; sourceTree = "<group>"; };
 		946F44242079750600B9D921 /* DetailGeneralCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGeneralCell.xib; sourceTree = "<group>"; };
+		946F44292079EB2000B9D921 /* Pots-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pots-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB209C5415F5014C669A2DF1 /* Pods-PotsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PotsUITests/Pods-PotsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C71DA9D4CF99F6DB528E5FEB /* Pods-Pots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pots/Pods-Pots.release.xcconfig"; sourceTree = "<group>"; };
 		C88C5960F8EDB338816968FD /* Pods-PotsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PotsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PotsUITests/Pods-PotsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 		94139DCD2078C198001A6491 = {
 			isa = PBXGroup;
 			children = (
+				946F44292079EB2000B9D921 /* Pots-Bridging-Header.h */,
 				94139DD82078C198001A6491 /* Pots */,
 				94139DED2078C199001A6491 /* PotsTests */,
 				94139DF82078C199001A6491 /* PotsUITests */,
@@ -511,10 +513,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pots/Pods-Pots-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PubNub/PubNub.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PubNub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -720,6 +724,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pots.Pots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pots-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -736,6 +741,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pots.Pots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pots-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
