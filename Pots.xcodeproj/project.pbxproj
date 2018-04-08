@@ -220,8 +220,8 @@
 		946F44152078DCA500B9D921 /* PotDetail */ = {
 			isa = PBXGroup;
 			children = (
-				946F441B2079745600B9D921 /* HomeDetail.storyboard */,
 				946F44132078DC9E00B9D921 /* PotDetailVC.swift */,
+				946F441B2079745600B9D921 /* HomeDetail.storyboard */,
 				946F4422207974A800B9D921 /* Cell */,
 			);
 			path = PotDetail;

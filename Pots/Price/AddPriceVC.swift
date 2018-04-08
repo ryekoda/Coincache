@@ -25,6 +25,7 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     
     fileprivate func setupView() {
         self.priceTextField.becomeFirstResponder()
+        
         guard let title = titleText else {
             return
         }

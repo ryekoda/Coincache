@@ -24,7 +24,6 @@ class Keyboard: UIView {
     }
     
     @IBAction func doneTapped(sender: UIButton) {
-       print("hi")
        self.delegate?.doneWasTapped()
     }
     
