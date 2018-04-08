@@ -143,13 +143,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hn5-De-G4l"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Price" id="edb-Po-5aP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="mPc-Ki-bc4">
-                            <connections>
-                                <action selector="doneButtonPressed:" destination="04h-FD-a2G" id="mzT-B4-JEt"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Price" id="edb-Po-5aP"/>
                     <connections>
                         <outlet property="priceTextField" destination="ME4-Wu-xtk" id="Wea-8k-cq3"/>
                         <outlet property="titleLabel" destination="Rvp-wj-yZm" id="S0T-JG-XnK"/>

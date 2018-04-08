@@ -10,6 +10,7 @@ import UIKit
 
 protocol KeyboardDelegate: class {
     func keyWasTapped(character: String)
+    func doneWasTapped()
 }
 
 class Keyboard: UIView {
@@ -20,6 +21,11 @@ class Keyboard: UIView {
         if let char = sender.currentTitle {
             self.delegate?.keyWasTapped(character: char)
         }
+    }
+    
+    @IBAction func doneTapped(sender: UIButton) {
+       print("hi")
+       self.delegate?.doneWasTapped()
     }
     
     // MARK:- keyboard initialization

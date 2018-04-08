@@ -10,18 +10,12 @@ import UIKit
 
 class AddPriceVC: UIViewController, KeyboardDelegate {
     
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var priceTextField: UITextField!
-    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
-        dismissKeyboard()
-        self.dismiss(animated: true, completion: nil)
-    }
+    
     var titleText: String?
     let hardPhrases = ["Before the result, comes the experiment.", "The distance between insanity and genius is measured only by success.", "Success is most often achieved by those who don't know that failure is inevitable.", "The whole secret of a successful life is to find out what is one's destiny to do, and then do it.", "If you are not willing to risk the usual, you will have to settle for the ordinary.", "Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."]
     let easyPhrases = ["Great start!", "Give it a try.", "Go for it.", "It's worth a shot.", "What are you waiting for?.", "I'm so proud of you!", "It's your call."]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +48,10 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
         } else {
             priceTextField.insertText(character)
         }
+    }
+    func doneWasTapped() {
+        dismissKeyboard()
+        self.dismiss(animated: true, completion: nil)
     }
 }
 extension AddPriceVC: UITextFieldDelegate {
