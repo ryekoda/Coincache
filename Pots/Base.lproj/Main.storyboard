@@ -406,6 +406,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Rkv-8j-Itd" secondAttribute="trailing" constant="21" id="1OX-Li-iMK"/>
                                     <constraint firstItem="eoz-Qb-IVV" firstAttribute="leading" secondItem="GZA-M4-M8j" secondAttribute="leading" constant="29" id="5wK-Se-j8Q"/>
                                     <constraint firstItem="eoz-Qb-IVV" firstAttribute="top" secondItem="Rkv-8j-Itd" secondAttribute="bottom" constant="16" id="98c-vI-ZxR"/>
+                                    <constraint firstAttribute="height" constant="230" id="Bzg-7B-eq0"/>
                                     <constraint firstItem="Rkv-8j-Itd" firstAttribute="leading" secondItem="GZA-M4-M8j" secondAttribute="leading" constant="21" id="HKa-dD-4pL"/>
                                     <constraint firstAttribute="bottom" secondItem="eoz-Qb-IVV" secondAttribute="bottom" constant="46.5" id="PZ8-bt-Wzx"/>
                                     <constraint firstAttribute="trailing" secondItem="eoz-Qb-IVV" secondAttribute="trailing" constant="29" id="WLI-bc-ZG0"/>
@@ -452,6 +453,7 @@
                                     <constraint firstItem="0HC-nI-nfY" firstAttribute="top" secondItem="7ux-Gc-mhR" secondAttribute="top" constant="19" id="7MP-7a-DzG"/>
                                     <constraint firstItem="0HC-nI-nfY" firstAttribute="leading" secondItem="7ux-Gc-mhR" secondAttribute="leading" constant="23" id="Bij-t4-9SD"/>
                                     <constraint firstAttribute="trailing" secondItem="0HC-nI-nfY" secondAttribute="trailing" constant="23" id="fc3-VA-1Rv"/>
+                                    <constraint firstAttribute="height" constant="234" id="xpu-PT-8qc"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
