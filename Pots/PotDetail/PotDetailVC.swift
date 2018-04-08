@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import Alamofire
 
 class PotDetailVC: UIViewController, JoinGroupDelegate {
+    
+    
+    var contributorProfiles = ["photo1", "photo2", "photo3", "photo4", "photo5", "photo6", "photo7", "photo8", "photo9", "photo10", "photo11"]
+    var contributorsNames = ["Ryan", "Jade", "Dima", "Farn-yu", "Frank", "Blake", "Adam", "Ashley", "Pat", "Lisi"]
+    
+    var newOrderProfiles: [String] = []
+    var nam: [String] = []
+    
     func profileTapped() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ProfileVC")
@@ -23,6 +32,26 @@ class PotDetailVC: UIViewController, JoinGroupDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "PriceVC")
         self.present(controller, animated: true, completion: nil)
+        
+        //
+        Alamofire.request("http://192.168.100.233:3000/pots/join").responseJSON { response in
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+            if let json = response.result.value {
+                let dd = json as? [Dictionary<String, Any>]
+                print("Gaoolll = \(dd)")
+//                self.potList = dd!
+//                self.tableView.reloadData()
+            }
+            
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print("Data: \(utf8Text)") // original server data as UTF8 string
+            }
+        }
+        
+        print("Hello, world!")
     }
     
     
@@ -36,6 +65,9 @@ class PotDetailVC: UIViewController, JoinGroupDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.prepareUI()
+        
+        self.newOrderProfiles = self.contributorProfiles.shuffled()
+        self.nam = self.contributorsNames.shuffled()
     }
     
     func prepareUI() {
@@ -105,6 +137,10 @@ extension PotDetailVC: UITableViewDelegate, UITableViewDataSource {
             return overViewCell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: identifiers.detailGeneralCell, for: indexPath) as! DetailGeneralCell
+        
+            cell.profileImage.image = UIImage(named: "\(self.newOrderProfiles[indexPath.row])")
+            cell.profileNameLabel.text = self.nam[indexPath.row]
+            
             return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: identifiers.detailGeneralCell, for: indexPath) as! DetailGeneralCell

@@ -15,12 +15,12 @@ protocol JoinGroupDelegate: class {
 
 class DetailOverviewCell: UITableViewCell {
 
-    
     @IBOutlet weak var groupImageView: UIImageView!
     @IBOutlet weak var joinGroupButton: UIButton!
     @IBOutlet weak var cashLabel: UILabel!
     
     @IBOutlet weak var profileImg: UIImageView!
+    
     @IBAction func joinGroupButtonTapped(sender: UIButton) {
         self.delegate?.joinGroupButtonWasTapped()
     }

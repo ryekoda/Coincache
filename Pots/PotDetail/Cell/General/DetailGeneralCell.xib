@@ -20,7 +20,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Ces-mx-BL8">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="Ces-mx-BL8">
                         <rect key="frame" x="12" y="8" width="33.5" height="33.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Ces-mx-BL8" secondAttribute="height" multiplier="25:22" constant="-4.5681818181818201" id="mKg-Xz-e60"/>
@@ -45,6 +45,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="profileImage" destination="Ces-mx-BL8" id="w0d-IP-eLv"/>
+                <outlet property="profileNameLabel" destination="31s-ws-XZG" id="vZC-Ap-s1F"/>
             </connections>
             <point key="canvasLocation" x="34" y="82"/>
         </tableViewCell>
