@@ -50,6 +50,9 @@
                         </constraints>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Join Group"/>
+                        <connections>
+                            <action selector="joinGroupButtonTappedWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eJm-HP-BbO"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

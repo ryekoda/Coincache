@@ -8,11 +8,21 @@
 
 import UIKit
 
+protocol JoinGroupDelegate: class {
+    func joinGroupButtonWasTapped()
+}
+
 class DetailOverviewCell: UITableViewCell {
 
     
     @IBOutlet weak var groupImageView: UIImageView!
     @IBOutlet weak var joinGroupButton: UIButton!
+    
+    @IBAction func joinGroupButtonTapped(sender: UIButton) {
+        self.delegate?.joinGroupButtonWasTapped()
+    }
+    
+    weak var delegate: JoinGroupDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()

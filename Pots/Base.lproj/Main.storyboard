@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hAx-9K-5WZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hAx-9K-5WZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
@@ -62,7 +57,7 @@
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="X5c-vj-fz6">
                             <connections>
-                                <segue destination="dGO-6O-vhp" kind="showDetail" action="showViewController:sender:" id="E5C-LO-JEV"/>
+                                <segue destination="dGO-6O-vhp" kind="showDetail" id="E5C-LO-JEV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -75,50 +70,10 @@
             </objects>
             <point key="canvasLocation" x="260" y="131.78410794602701"/>
         </scene>
-        <!--Post-->
-        <scene sceneID="oT6-Sa-xac">
-            <objects>
-                <viewController id="cOa-Cp-gZW" customClass="PostVC" customModule="Pots" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4j1-fS-A2d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="724-pR-NOy">
-                                <rect key="frame" x="172" y="197" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="1"/>
-                                <connections>
-                                    <action selector="keyTappedWithSender:" destination="cOa-Cp-gZW" eventType="touchUpInside" id="XeV-js-4JU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGm-q2-8Cc">
-                                <rect key="frame" x="172" y="344" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="2"/>
-                                <connections>
-                                    <action selector="keyTappedWithSender:" destination="cOa-Cp-gZW" eventType="touchUpInside" id="zCH-8o-eCe"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="piu-iZ-vI8"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Post" id="LPX-Fh-y1u">
-                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="WoX-FE-eha">
-                            <connections>
-                                <action selector="cancelButtonPressed:" destination="cOa-Cp-gZW" id="vhJ-H1-WhO"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O2k-cG-1wL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1706" y="-663"/>
-        </scene>
         <!--Price-->
         <scene sceneID="HmR-S5-h5p">
             <objects>
-                <viewController id="04h-FD-a2G" customClass="AddPriceVC" customModule="Pots" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PriceVC" id="04h-FD-a2G" customClass="AddPriceVC" customModule="Pots" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pKH-PG-4Vw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,25 +149,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tko-oe-s42" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-396" y="132"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Xvr-76-34u">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="s4e-az-MTc" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rl7-jQ-esp">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cOa-Cp-gZW" kind="relationship" relationship="rootViewController" id="K4g-EI-mcO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PXv-eC-M74" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1036" y="-663"/>
         </scene>
         <!--HomeDetail-->
         <scene sceneID="jzo-Sh-d3G">

@@ -8,7 +8,13 @@
 
 import UIKit
 
-class PotDetailVC: UIViewController {
+class PotDetailVC: UIViewController, JoinGroupDelegate {
+    func joinGroupButtonWasTapped() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "PriceVC")
+        self.present(controller, animated: true, completion: nil)
+    }
+    
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -85,6 +91,7 @@ extension PotDetailVC: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.section {
         case 0:
             let overViewCell = tableView.dequeueReusableCell(withIdentifier: identifiers.detailOverviewCell, for: indexPath) as! DetailOverviewCell
+            overViewCell.delegate = self
             return overViewCell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: identifiers.detailGeneralCell, for: indexPath) as! DetailGeneralCell
