@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		072F182B2079A3260011CE47 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F18292079A3260011CE47 /* CardView.swift */; };
 		072F182C2079A3260011CE47 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F182A2079A3260011CE47 /* RoundButton.swift */; };
+		072F182E2079AEAA0011CE47 /* AvenirLTStd-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 072F182D2079AEAA0011CE47 /* AvenirLTStd-Light.ttf */; };
 		2714067D207988FF00B45808 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714067C207988FF00B45808 /* Keyboard.swift */; };
 		2714067F20798A5900B45808 /* NumPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2714067B207988FE00B45808 /* NumPad.xib */; };
 		94139DDA2078C198001A6491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DD92078C198001A6491 /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		072F18292079A3260011CE47 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		072F182A2079A3260011CE47 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		072F182D2079AEAA0011CE47 /* AvenirLTStd-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AvenirLTStd-Light.ttf"; path = "../../../Downloads/AvenirLTStd-Light.ttf"; sourceTree = "<group>"; };
 		2714067B207988FE00B45808 /* NumPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumPad.xib; sourceTree = "<group>"; };
 		2714067C207988FF00B45808 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		94139DD62078C198001A6491 /* Pots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pots.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +136,7 @@
 				946F440F2078D9B200B9D921 /* Post */,
 				946F44122078DA9E00B9D921 /* Price */,
 				94139DDD2078C198001A6491 /* Main.storyboard */,
+				072F182D2079AEAA0011CE47 /* AvenirLTStd-Light.ttf */,
 				94139DE02078C198001A6491 /* Assets.xcassets */,
 				94139DE52078C198001A6491 /* Info.plist */,
 				946F441620793F9700B9D921 /* Supporting Files */,
@@ -378,6 +381,7 @@
 			files = (
 				2714067F20798A5900B45808 /* NumPad.xib in Resources */,
 				946F44182079626900B9D921 /* ContributorsView.xib in Resources */,
+				072F182E2079AEAA0011CE47 /* AvenirLTStd-Light.ttf in Resources */,
 				94139DE42078C198001A6491 /* LaunchScreen.storyboard in Resources */,
 				94139DE12078C198001A6491 /* Assets.xcassets in Resources */,
 				94139DDF2078C198001A6491 /* Main.storyboard in Resources */,
