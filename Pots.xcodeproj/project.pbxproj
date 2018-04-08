@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072F182B2079A3260011CE47 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F18292079A3260011CE47 /* CardView.swift */; };
+		072F182C2079A3260011CE47 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F182A2079A3260011CE47 /* RoundButton.swift */; };
 		2714067D207988FF00B45808 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714067C207988FF00B45808 /* Keyboard.swift */; };
 		2714067F20798A5900B45808 /* NumPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2714067B207988FE00B45808 /* NumPad.xib */; };
 		94139DDA2078C198001A6491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DD92078C198001A6491 /* AppDelegate.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		072F18292079A3260011CE47 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		072F182A2079A3260011CE47 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		2714067B207988FE00B45808 /* NumPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumPad.xib; sourceTree = "<group>"; };
 		2714067C207988FF00B45808 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		94139DD62078C198001A6491 /* Pots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pots.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				946F440C2078D9A900B9D921 /* PostVC.swift */,
+				072F18292079A3260011CE47 /* CardView.swift */,
+				072F182A2079A3260011CE47 /* RoundButton.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -403,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072F182C2079A3260011CE47 /* RoundButton.swift in Sources */,
 				94139E092078C46A001A6491 /* HomeGeneralCell.swift in Sources */,
 				946F44112078DA9A00B9D921 /* AddPriceVC.swift in Sources */,
 				2714067D207988FF00B45808 /* Keyboard.swift in Sources */,
@@ -412,6 +419,7 @@
 				946F4420207974A400B9D921 /* DetailOverviewCell.swift in Sources */,
 				946F44142078DC9E00B9D921 /* PotDetailVC.swift in Sources */,
 				946F441A2079636A00B9D921 /* ContributorsView.swift in Sources */,
+				072F182B2079A3260011CE47 /* CardView.swift in Sources */,
 				946F44252079750600B9D921 /* DetailGeneralCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
