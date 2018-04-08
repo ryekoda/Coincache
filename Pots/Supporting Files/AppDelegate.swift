@@ -131,26 +131,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener {
                     // This is expected for a subscribe, this means there is no error or issue whatsoever.
                     
                     // Select last object from list of channels and send message to it.
-                    let targetChannel = client.channels().last!
-                    client.publish("Hello from the PubNub Swift SDK", toChannel: targetChannel,
-                                   compressed: false, withCompletion: { (publishStatus) -> Void in
-                                    
-                                    if !publishStatus.isError {
-                                        
-                                        // Message successfully published to specified channel.
-                                    }
-                                    else {
-                                        
-                                        /**
-                                         Handle message publish error. Check 'category' property to find out
-                                         possible reason because of which request did fail.
-                                         Review 'errorData' property (which has PNErrorData data type) of status
-                                         object to get additional information about issue.
-                                         
-                                         Request can be resent using: publishStatus.retry()
-                                         */
-                                    }
-                    })
+//                    let targetChannel = client.channels().last!
+//                    client.publish("Hello from the PubNub Swift SDK", toChannel: targetChannel,
+//                                   compressed: false, withCompletion: { (publishStatus) -> Void in
+//
+//                                    if !publishStatus.isError {
+//
+//                                        // Message successfully published to specified channel.
+//                                    }
+//                                    else {
+//
+//                                        /**
+//                                         Handle message publish error. Check 'category' property to find out
+//                                         possible reason because of which request did fail.
+//                                         Review 'errorData' property (which has PNErrorData data type) of status
+//                                         object to get additional information about issue.
+//
+//                                         Request can be resent using: publishStatus.retry()
+//                                         */
+//                                    }
+//                    })
                 }
                 else {
                     

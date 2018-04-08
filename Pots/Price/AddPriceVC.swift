@@ -72,8 +72,8 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
         
         if let price = self.priceTextField.text, !price.isEmpty, price != "." {
            let amount = Double(price)!
-           userCash -= amount
-           btc += amount/10
+           //userCash -= amount
+           //btc += amount/10
            SVProgressHUD.showSuccess(withStatus: "Added $\(price) successfully!")
            present()
            

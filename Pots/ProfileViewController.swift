@@ -9,7 +9,10 @@
 import UIKit
 
 var userCash: Double = 50.00
-var btc: Double = 0.12
+var btc: Double = 0.0
+
+var beforeUserCash: Double = 0.00
+var beforeBtc: Double = 0.12
 
 
 class ProfileViewController: UIViewController {
@@ -20,6 +23,8 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let notiName = Notification.Name("pushNotification")
+        NotificationCenter.default.addObserver(self, selector: #selector(self.hello), name: notiName, object: nil)
         
     }
     @IBAction func cancel(_ sender: UIBarButtonItem) {
@@ -29,10 +34,16 @@ class ProfileViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        usdAmount.text = String(format: "%.2f", beforeUserCash)
+        btcAmount.text = String(format: "%.2f", beforeBtc)
+    }
+
+    @objc func hello() {
+        
+        print("We are good!!!")
+        
         usdAmount.text = String(format: "%.2f", userCash)
         btcAmount.text = String(format: "%.2f", btc)
     }
-
-    
 
 }
