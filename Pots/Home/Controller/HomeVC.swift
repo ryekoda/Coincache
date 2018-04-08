@@ -182,7 +182,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
 //        let stringRepresentation = ", ".join(firstFive)
         cell.contributorsNamesLabel.text = "\(jjj), +7 others"
         cell.timeLeftLabel.text = self.stashTimes[indexPath.row]
-        
+        cell.potPriceLabel.text = self.prices[indexPath.row]
         if self.stashTimes[indexPath.row] == "Closed" {
             cell.timeLeftLabel.textColor = UIColor.red
             cell.timeLeftLabel.font = UIFont.boldSystemFont(ofSize: 15.0)

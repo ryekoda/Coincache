@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PNObjectEventListener {
     var client: PubNub!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+        UIApplication.shared.isStatusBarHidden = false
         setupNavBar()
         
         // Initialize and configure PubNub client instance
