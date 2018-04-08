@@ -29,9 +29,16 @@ class PotDetailVC: UIViewController, JoinGroupDelegate {
     }
     
     func joinGroupButtonWasTapped() {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = storyboard.instantiateViewController(withIdentifier: "PriceVC")
+//        self.present(controller, animated: true, completion: nil)
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "PriceVC")
-        self.present(controller, animated: true, completion: nil)
+        //        self.present(controller, animated: true, completion: nil)
+        //
+        //        let profileVC = ProfileViewController()
+        navigationController?.pushViewController(controller, animated: true)
         
         //
         Alamofire.request("http://192.168.100.233:3000/pots/join").responseJSON { response in
