@@ -18,6 +18,7 @@ class DetailOverviewCell: UITableViewCell {
     
     @IBOutlet weak var groupImageView: UIImageView!
     @IBOutlet weak var joinGroupButton: UIButton!
+    @IBOutlet weak var cashLabel: UILabel!
     
     @IBOutlet weak var profileImg: UIImageView!
     @IBAction func joinGroupButtonTapped(sender: UIButton) {
@@ -40,6 +41,8 @@ class DetailOverviewCell: UITableViewCell {
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(tapGesture1))
         groupImageView.addGestureRecognizer(tap1)
         groupImageView.isUserInteractionEnabled = true
+        
+        cashLabel.text = "$\(userCash)"
     }
     
     @objc func tapGesture1() {

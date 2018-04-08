@@ -9,6 +9,8 @@
 import UIKit
 import SVProgressHUD
 
+var userCash: Double = 50.0
+
 class AddPriceVC: UIViewController, KeyboardDelegate {
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -53,9 +55,10 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     }
     func doneWasTapped() {
         dismissKeyboard()
-        if let price = self.priceTextField.text, !price.isEmpty {
-            
+        if let price = self.priceTextField.text, !price.isEmpty, price != "." {
+           userCash += Double(price)!
            SVProgressHUD.showSuccess(withStatus: "Added $\(price) successfully!")
+            
         }
         
         self.dismiss(animated: true, completion: nil)

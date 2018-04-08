@@ -472,6 +472,9 @@
                         <viewLayoutGuide key="safeArea" id="OCy-Ga-vbg"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="52p-04-lmA"/>
+                    <connections>
+                        <outlet property="usdAmount" destination="eoz-Qb-IVV" id="SXC-vl-BKT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBV-eL-Nie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
