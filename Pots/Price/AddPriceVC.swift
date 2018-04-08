@@ -9,6 +9,8 @@
 import UIKit
 import SVProgressHUD
 
+var userCash: Double = 50.0
+
 class AddPriceVC: UIViewController, KeyboardDelegate {
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -27,15 +29,15 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     fileprivate func setupView() {
         self.priceTextField.becomeFirstResponder()
         
-        guard let title = titleText else {
-            return
-        }
         if title == "Gain" {
             titleLabel.text = hardPhrases[Int(arc4random_uniform(UInt32(hardPhrases.count-1)))]
         } else {
             titleLabel.text = easyPhrases[Int(arc4random_uniform(UInt32(easyPhrases.count-1)))]
         }
         self.title = titleText
+        guard let title = titleText else {
+            return
+        }
     }
     
     fileprivate func setupKeyBoard() {
@@ -53,9 +55,10 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     }
     func doneWasTapped() {
         dismissKeyboard()
-        if let price = self.priceTextField.text, !price.isEmpty {
-            
+        if let price = self.priceTextField.text, !price.isEmpty, price != "." {
+           userCash += Double(price)!
            SVProgressHUD.showSuccess(withStatus: "Added $\(price) successfully!")
+            
         }
         
         self.dismiss(animated: true, completion: nil)

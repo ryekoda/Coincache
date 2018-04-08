@@ -11,6 +11,7 @@
 		072F182C2079A3260011CE47 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F182A2079A3260011CE47 /* RoundButton.swift */; };
 		2714067D207988FF00B45808 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2714067C207988FF00B45808 /* Keyboard.swift */; };
 		2714067F20798A5900B45808 /* NumPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2714067B207988FE00B45808 /* NumPad.xib */; };
+		27F0F0D6207A69C100E9ED69 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0F0D5207A69C100E9ED69 /* ProfileViewController.swift */; };
 		2E908CC6FC35565D0A103B4A /* Pods_PotsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E13EF6B97C220F59706EB0 /* Pods_PotsTests.framework */; };
 		74D4C70B346CE638B5C2B496 /* Pods_PotsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58949EF8F4B0AA6E69DB1B74 /* Pods_PotsUITests.framework */; };
 		94139DDA2078C198001A6491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94139DD92078C198001A6491 /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 		072F182A2079A3260011CE47 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		2714067B207988FE00B45808 /* NumPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumPad.xib; sourceTree = "<group>"; };
 		2714067C207988FF00B45808 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		27F0F0D5207A69C100E9ED69 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		293D01E510C5F738F742F436 /* Pods-Pots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pots/Pods-Pots.debug.xcconfig"; sourceTree = "<group>"; };
 		58949EF8F4B0AA6E69DB1B74 /* Pods_PotsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E13EF6B97C220F59706EB0 /* Pods_PotsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PotsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +165,7 @@
 				946F440F2078D9B200B9D921 /* Post */,
 				946F44122078DA9E00B9D921 /* Price */,
 				94139DDD2078C198001A6491 /* Main.storyboard */,
+				27F0F0D5207A69C100E9ED69 /* ProfileViewController.swift */,
 				94139DE02078C198001A6491 /* Assets.xcassets */,
 				94139DE52078C198001A6491 /* Info.plist */,
 				946F441620793F9700B9D921 /* Supporting Files */,
@@ -624,6 +627,7 @@
 				946F4420207974A400B9D921 /* DetailOverviewCell.swift in Sources */,
 				946F44142078DC9E00B9D921 /* PotDetailVC.swift in Sources */,
 				946F441A2079636A00B9D921 /* ContributorsView.swift in Sources */,
+				27F0F0D6207A69C100E9ED69 /* ProfileViewController.swift in Sources */,
 				072F182B2079A3260011CE47 /* CardView.swift in Sources */,
 				946F44252079750600B9D921 /* DetailGeneralCell.swift in Sources */,
 			);
