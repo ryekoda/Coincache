@@ -10,6 +10,7 @@ import UIKit
 
 class HomeGeneralCell: UITableViewCell {
     
+    @IBOutlet weak var potPriceLabel: UILabel!
     @IBOutlet weak var contributorsLeftConstraint: NSLayoutConstraint!
     
     override func awakeFromNib() {
