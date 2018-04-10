@@ -28,7 +28,7 @@ No longer are you alone in the venture; with CoinCache, you can see where people
 ## Features
 
 * Experience community: See who else is investing in the same group, and contribute to their pot.
-* Invest with safeguards: The smart contracts backend takes you out of an investment before it becomes too risky.
+* Invest with safeguards: Our system takes you out of an investment before it becomes too risky.
 * Create a new investment group: Our proprietary algorithm matches you to people with a complementary investment strategy.
 * Join an investment group: Join friends in their investing adventures.
 * See your current wallet balance in both USD and Bitcoin.
