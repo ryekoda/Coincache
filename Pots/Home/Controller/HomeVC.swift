@@ -161,6 +161,9 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifiers.generalCell, for: indexPath) as! HomeGeneralCell
         
         let pot = self.potList[indexPath.row] as? Dictionary<String, Any>
+        print("hhh = \(pot)")
+        var jj = pot!["amount"] as! Int
+        print("whayyy = \(jj)")
         cell.potPriceLabel.text = "$\(pot!["amount"] as! Int)"
 //        cell.potPriceLabel.text = "$\(self.prices[indexPath.row])"
         let newOrderProfiles = self.contributorProfiles.shuffled()

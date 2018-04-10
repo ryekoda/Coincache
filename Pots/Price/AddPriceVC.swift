@@ -8,6 +8,7 @@
 
 import UIKit
 import SVProgressHUD
+import Alamofire
 
 
 class AddPriceVC: UIViewController, KeyboardDelegate {
@@ -38,6 +39,7 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
     
     @objc func done() { // remove @objc for Swift 3
         dismiss(animated: true, completion: nil)
+        print("hi")
     }
     
     fileprivate func setupView() {
@@ -67,9 +69,24 @@ class AddPriceVC: UIViewController, KeyboardDelegate {
             priceTextField.insertText(character)
         }
     }
+    fileprivate func apiCall() {
+        
+        
+        Alamofire.request("http://192.168.100.233:3000/pots/join").responseJSON { response in
+            print("Request: \(String(describing: response.request))")   // original url request
+            print("Response: \(String(describing: response.response))") // http url response
+            print("Result: \(response.result)")                         // response serialization result
+            
+        }
+        
+        print("Goodbye, Done!")
+    }
+    
     func doneWasTapped() {
         dismissKeyboard()
         
+        //HERE aadd alamofire
+        apiCall()
         if let price = self.priceTextField.text, !price.isEmpty, price != "." {
            let amount = Double(price)!
            //userCash -= amount

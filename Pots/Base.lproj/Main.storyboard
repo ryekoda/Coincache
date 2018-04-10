@@ -383,7 +383,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GZA-M4-M8j">
-                                <rect key="frame" x="16" y="148" width="343" height="230"/>
+                                <rect key="frame" x="16" y="104" width="343" height="230"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkv-8j-Itd">
                                         <rect key="frame" x="21" y="19" width="301" height="29"/>
@@ -419,7 +419,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYD-gh-Cqd">
-                                <rect key="frame" x="32" y="93" width="311" height="30"/>
+                                <rect key="frame" x="32" y="49" width="311" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="h6w-Ec-7FI"/>
                                 </constraints>
@@ -428,7 +428,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ux-Gc-mhR">
-                                <rect key="frame" x="16" y="403" width="343" height="234"/>
+                                <rect key="frame" x="16" y="359" width="343" height="278"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HC-nI-nfY">
                                         <rect key="frame" x="23" y="19" width="297" height="30"/>
@@ -520,6 +520,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RAQ-3K-au9"/>
+        <segue reference="Zvb-Vt-4xd"/>
     </inferredMetricsTieBreakers>
 </document>
